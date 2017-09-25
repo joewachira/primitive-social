@@ -29,3 +29,15 @@ class Comment(object):
         self.user = user
         self.body = body
         return True
+
+    def get_comment(self):
+        """
+        a method to return comment data
+        :return: dict of comment data
+        """
+        return {
+            'commentId': self.commentId,
+            'postId': self.postId,
+            'user': self.user,
+            'body': self.body
+        }
