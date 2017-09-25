@@ -12,16 +12,16 @@ class Comment(object):
         """
         A function to create comment, returns True if successful
         """
-        if not isinstance(commentId, int):
+        if not isinstance(commentId, int):  # check if commentId is an integer
             raise ValueError("Expected value of %(xtype)s" % dict(xtype=type(int)))
 
-        if not isinstance(postId, int):
+        if not isinstance(postId, int):  # check if postId is an integer
             raise ValueError("Expected value of %(xtype)s" % dict(xtype=type(int)))
 
-        if not isinstance(user, str):
+        if not isinstance(user, str):  # check if user is str
             raise ValueError("Expected argument of %(xtype)s" % dict(xtype=type(str)))
 
-        if not isinstance(body, str):
+        if not isinstance(body, str):  # check if body is str
             raise ValueError("Expected argument of %(xtype)s" % dict(xtype=type(str)))
 
         self.commentId = commentId
