@@ -19,7 +19,7 @@ class Test_Comment(unittest.TestCase):
     def test_comments_create_method_body_is_blank(self):
         self.assertRaises(ValueError, self.com.create, 'one', '1', 'one', '')
 
-    ef test_comments_create_method_user_and_body_is_blank(self):
+    def test_comments_create_method_user_and_body_is_blank(self):
         self.assertRaises(ValueError, self.com.create, 'one', '1', '', '')      
 
 
